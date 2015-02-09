@@ -1887,3 +1887,11 @@ Processing by ArticlesController#index as HTML
   [1m[36mArticle Load (0.3ms)[0m  [1mSELECT `articles`.* FROM `articles`[0m
   Rendered articles/index.html.erb within layouts/application (6.0ms)
 Completed 200 OK in 248ms (Views: 247.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles" for ::1 at 2015-02-09 13:39:38 +1100
+  [1m[36mActiveRecord::SchemaMigration Load (109.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (107.0ms)[0m  SELECT `articles`.* FROM `articles`
+  Rendered articles/index.html.erb within layouts/application (444.9ms)
+Completed 200 OK in 1729ms (Views: 1396.7ms | ActiveRecord: 289.2ms)
